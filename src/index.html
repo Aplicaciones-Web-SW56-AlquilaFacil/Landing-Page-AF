@@ -79,6 +79,17 @@
             </div>
         </div>
     </section>
+
+    <!-- banner -->
+    <section class="mx-auto max-w-7xl">
+        <img src="/img/banner-2.png" alt="banner" class="mx-auto object-contain rounded-xl">
+        <div class="relative bottom-28 left-24">
+            <button class="text-white bg-black px-7 py-3 rounded-xl font-bold text-xl">
+                Saber más
+            </button>
+        </div>
+    </section>
+
     <!-- banner 3 -->
     <section class="mx-auto flex">
         <img src="/img/banner-3.png" alt="banner-3" class="object-contain w-full absolute blur-sm">
@@ -98,8 +109,9 @@
             </button>
         </div>
     </section>
-     <!-- Titulo -->
-     <section class="mx-auto max-w-7xl">
+
+    <!-- Titulo -->
+    <section class="mx-auto max-w-7xl">
         <h1 class="font-bold text-6xl">
             Variedad
         </h1>
@@ -107,69 +119,72 @@
 
     <!-- Cards -->
     <section class="mx-auto max-w-7xl mt-12">
-        <div class="grid grid-cols-2  md:grid-cols-4 lg:grid-cols-4 md:gap-11 gap-4 md:ml-0 items-stretch p-4 md:p-6 lg:p-4">
+        <div
+            class="grid grid-cols-2  md:grid-cols-4 lg:grid-cols-4 md:gap-11 gap-4 md:ml-0 items-stretch p-4 md:p-6 lg:p-4">
             {{ set "project-card-base" "rounded-3xl overflow-hidden"}}
             {{ set "project-card-title" "font-bold text-xl text-white text-center py-14"}}
 
             <!--SALON-->
-            <a class="{{get "project-card-base" }} bg-red-800 hover:opacity-80">
+            <a class="{{get " project-card-base" }} bg-red-800 hover:opacity-80">
                 <div class="text-center">
                     <img class="object-contain w-full" src="/img/salon.png">
                 </div>
                 <div class="px-2 py-2 flex flex-col">
-                    <div class="{{get "project-card-title" }}">SALONES<br>ELEGANTES</div>
+                    <div class="{{get " project-card-title" }}">SALONES<br>ELEGANTES</div>
                 </div>
             </a>
             <!--campo-->
-            <a class="{{get "project-card-base" }} bg-red-800 hover:bg-red-300">
+            <a class="{{get " project-card-base" }} bg-red-800 hover:bg-red-300">
                 <div class="text-center">
                     <img class="inline-block object-contain w-full" src="/img/casa-campo.png">
                 </div>
                 <div class="px-2 py-2 flex flex-col h-24 grow">
-                    <div class="{{get "project-card-title" }}">CASAS DE<br>CAMPO</div>
+                    <div class="{{get " project-card-title" }}">CASAS DE<br>CAMPO</div>
                 </div>
             </a>
             <!--Casa de playa-->
-            <a class="{{get "project-card-base" }} bg-red-800 hover:bg-red-300">
+            <a class="{{get " project-card-base" }} bg-red-800 hover:bg-red-300">
                 <div class="text-center">
                     <img class="inline-block object-contain w-full" src="/img/casa-playa.png">
                 </div>
                 <div class="px-2 py-2 flex flex-col h-24 grow">
-                    <div class="{{get "project-card-title" }}">CASAS DE<br>PLAYA</div>
+                    <div class="{{get " project-card-title" }}">CASAS DE<br>PLAYA</div>
                 </div>
             </a>
             <!--CASA URBANA-->
-            <a class="{{get "project-card-base" }} bg-red-800 hover:bg-red-300">
+            <a class="{{get " project-card-base" }} bg-red-800 hover:bg-red-300">
                 <div class="text-center">
                     <img class="inline-block object-contain w-full" src="/img/casa-urbana.png">
                 </div>
                 <div class="px-2 py-2 flex flex-col h-24 grow">
-                    <div class="{{get "project-card-title" }}">CASAS<br>URBANAS</div>
+                    <div class="{{get " project-card-title" }}">CASAS<br>URBANAS</div>
                 </div>
             </a>
         </div>
     </section>
-     <!-- FOOTER -->
-     <section class="w-full h-full bg-primary">
+    <!-- FOOTER -->
+    <section class="w-full h-full bg-primary">
         <div class="mx-auto max-w-xs md:max-w-7xl py-10 md:p-20">
             <div class="flex space-x-2 lg:space-x-10 items-center">
                 <img src="/img/logo-alquilafacil.png" alt="AlquilaFácil" class="object-cover h-20 md:h-32 lg:h-56">
                 <p class="font-semibold text-xs md:text-xl lg:text-2xl text-white sm:pr-0 lg:pr-52 text-justify">
                     Simplificamos el alquiler de espacios comerciales. Nuestra plataforma conecta propietarios con
-                    empresarios en busca de locales. Estamos comprometidos a facilitar el emprendimiento y proporcionar una
+                    empresarios en busca de locales. Estamos comprometidos a facilitar el emprendimiento y proporcionar
+                    una
                     experiencia excepcional para nuestros usuarios.
                 </p>
             </div>
         </div>
-        
-        <hr class="border-2 border-black"> 
+
+        <hr class="border-2 border-black">
         <div class="mx-auto max-w-xs md:max-w-7xl p-5 md:p-20">
             <div class="flex justify-between">
                 <div class="flex space-x-3">
-                    <img src="/img/logo-facebook.png" alt="Facebook" class="object-contain">    
+                    <img src="/img/logo-facebook.png" alt="Facebook" class="object-contain">
                     <img src="/img/logo-ig.png" alt="Ig" class="object-contain">
                 </div>
-                <div class="md:flex space-y-5 md:space-y-0 md:space-x-10 items-center font-semibold text-xs md:text-base justify-between">
+                <div
+                    class="md:flex space-y-5 md:space-y-0 md:space-x-10 items-center font-semibold text-xs md:text-base justify-between">
                     <p>
                         Politicas de<br>privacidad
                     </p>
