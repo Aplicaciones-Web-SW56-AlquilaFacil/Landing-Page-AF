@@ -1,7 +1,9 @@
 {{ define "partials/nav.partial.html" }}
 
-<section class="mx-auto max-w-6xl mb-10">
+<section class="mx-auto max-w-xs md:max-w-5xl lg:max-w-6xl mb-10" @click.outside="mobileMenuOpen=false" x-data="{mobileMenuOpen: false}">
+
     <nav class="flex justify-between py-6 items-center">
+
         <div class="flex items-center space-x-3">
             <a href="/">
                 <img src="/img/logo-alquilafacil.png" alt="AlquilaFácil" class="object-contain h-11">
@@ -10,21 +12,24 @@
                 AlquilaFácil
             </p>
         </div>
-        <div class="text-xl items-center space-x-12">
-            <a>
+
+        <!--menu web-->
+        <div class="md:flex hidden text-xl items-center space-x-12 text-center transition-all">
+            <a href="/" class="hover:underline hover:text-gray-900">
                 Lugares
             </a>
-            <a>
+            <a href="/" class="hover:underline hover:text-gray-900">
                 Pública
             </a>
-            <a>
+            <a href="/" class="hover:underline hover:text-gray-900">
                 Variedad
             </a>
-            <a>
+            <a href="/" class="hover:underline hover:text-gray-900">
                 Premiun
             </a>
         </div>
-        <div class="items-center space-x-3">
+
+        <div class="items-center space-x-3 md:flex hidden">
             <button class="border-2 border-red-600 text-red-600 rounded-md px-3 py-1">
                 Inicia Sesión
             </button>
@@ -32,9 +37,55 @@
                 Registrate
             </button>
         </div>
+
+        <!-- Mobile menu button -->
+        <button type="button" @click="mobileMenuOpen = ! mobileMenuOpen" class="relative justify-center text-black hover:bg-primary
+        hover:text-white focus:outline-none focus:ring-0 focus:ring-inset focus:ring-white flex items-center 
+        md:hidden border hover:border-white border-black px-3 py-1 rounded mr-2" aria-controls="mobile-menu" aria-expanded="false">
+           <span class="absolute -inset-0.5"></span>
+           <span class="sr-only">Open main menu</span>
+           <!-- closed -->
+           <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+               aria-hidden="true">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+           </svg>
+           <!-- open -->
+           <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+               aria-hidden="true">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+           </svg>
+       </button>
     </nav>
 
-    <div class="flex mx-auto max-w-7xl text-center justify-center"> 
+    <!-- Mobile menu-->
+    <div class="border-b-2 border-r-2 border-l-2 border-primary md:hidden" id="mobile-menu" x-show="mobileMenuOpen">
+        <div class="p-5 text-black">
+            <div class="grid grid-cols-1 text-center space-y-5">
+                <a href="/" class="hover:underline hover:text-gray-900">
+                    Lugares
+                </a>
+                <a href="/" class="hover:underline hover:text-gray-900">
+                    Pública
+                </a>
+                <a href="/" class="hover:underline hover:text-gray-900">
+                    Variedad
+                </a>
+                <a href="/" class="hover:underline hover:text-gray-900">
+                    Premiun
+                </a>
+                <div class="items-center grid grid-cols-1 gap-y-3">
+                    <button class="border-2 border-red-600 text-red-600 rounded-md px-3 py-1">
+                        Inicia Sesión
+                    </button>
+                    <button class="border-2 border-red-600 bg-red-600 text-white rounded-md px-3 py-1">
+                        Registrate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex mx-auto max-w-7xl text-center justify-center md:mt-0 mt-3">
         <div class="flex rounded-3xl border-2 border-red-600 p-2">
             <div class="items-center text-center">
                 <input type="text" class="" placeholder="Buscar">
