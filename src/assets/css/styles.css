@@ -544,6 +544,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
+.left-9 {
+  left: 2.25rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -639,13 +651,27 @@ video {
   text-align: center;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .font-semibold {
   font-weight: 600;
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(209 51 51 / var(--tw-text-opacity));
 }
 
 .text-red-600 {
@@ -663,4 +689,34 @@ html{
   font-optical-sizing: auto;
   /* font-weight: <weight>;
     font-style: normal; */
+}
+
+@media (min-width: 768px) {
+  .md\:bottom-24 {
+    bottom: 6rem;
+  }
+
+  .md\:left-12 {
+    left: 3rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:bottom-40 {
+    bottom: 10rem;
+  }
+
+  .lg\:left-14 {
+    left: 3.5rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
