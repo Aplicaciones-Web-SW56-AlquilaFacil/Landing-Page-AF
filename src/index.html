@@ -28,13 +28,13 @@
         </p>
     </section>
     <!-- Solo elige el lugar -->
-    <section class="mx-auto max-w-xs md:max-w-2xl lg:max-w-7xl">
+    <section class="mx-auto max-w-xs md:max-w-2xl lg:max-w-6xl">
         <h1 class="font-extrabold text-5xl">
             Solo elige el lugar
         </h1>
         <!-- grilla -->
         <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-0 md:gap-x-32 lg:gap-x-80 gap-y-10 justify-center items-center mt-20">
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-0 md:gap-x-10 lg:gap-x-64 gap-y-10 justify-center items-center mt-20">
             <div>
                 <img src="/img/lima.png" alt="Lima"
                     class="object-contain mx-auto rounded-xl hover:opacity-80 transition-opacity">
@@ -81,7 +81,7 @@
     </section>
 
     <!-- banner -->
-    <section class="mx-auto max-w-7xl">
+    <section class="mx-auto max-w-xs md:max-w-2xl lg:max-w-6xl mt-24">
         <img src="/img/banner-2.png" alt="banner" class="mx-auto object-contain rounded-xl">
         <div class="relative bottom-28 left-24">
             <button class="text-white bg-black px-7 py-3 rounded-xl font-bold text-xl">
@@ -91,7 +91,7 @@
     </section>
 
     <!-- banner 3 -->
-    <section class="mx-auto relative z-0">
+    <section class="mx-auto relative z-0 mt-24">
         <img src="/img/banner-3.png" alt="banner-3" class="object-contain w-full absolute">
         <div
             class="relative top-10 md:top-32 left-7 md:left-10 lg:top-56 lg:left-24 space-y-3 md:space-y-7 lg:space-y-16">
@@ -111,7 +111,7 @@
     </section>
 
     <!-- Cards -->
-    <section class="mx-auto max-w-7xl lg:mt-80 lg:pt-72 md:pt-72 pt-36">
+    <section class="mx-auto max-w-xs md:max-w-2xl lg:max-w-6xl lg:mt-80 lg:pt-72 md:pt-72 pt-36">
         <!-- Titulo -->
         <section class="mx-auto max-w-7xl">
             <h1 class="font-bold text-6xl">
@@ -119,12 +119,12 @@
             </h1>
         </section>
         <div
-            class="grid grid-cols-2  md:grid-cols-4 lg:grid-cols-4 md:gap-11 gap-4 md:ml-0 items-stretch p-4 md:p-6 lg:p-4">
+            class="grid grid-cols-2  md:grid-cols-4 lg:grid-cols-4 md:gap-11 gap-4 md:ml-0 items-stretch p-4 md:p-6 lg:p-4 mt-10">
             {{ set " project-card-base " " rounded-3xl overflow-hidden "}}
             {{ set " project-card-title " " font-bold text-xl text-white text-center py-14 "}}
 
             <!--SALON-->
-            <a class="{{get " project-card-base " }} bg-red-800 hover:opacity-80">
+            <a class="{{get " project-card-base " }} bg-red-800 hover:opacity-80 transition-all">
                 <div class="text-center">
                     <img class="object-contain w-full" src="/img/salon.png">
                 </div>
@@ -133,7 +133,7 @@
                 </div>
             </a>
             <!--campo-->
-            <a class="{{get " project-card-base " }} bg-red-800 hover:bg-red-300">
+            <a class="{{get " project-card-base " }} bg-red-800 hover:opacity-80 transition-all">
                 <div class="text-center">
                     <img class="inline-block object-contain w-full" src="/img/casa-campo.png">
                 </div>
@@ -142,7 +142,7 @@
                 </div>
             </a>
             <!--Casa de playa-->
-            <a class="{{get " project-card-base " }} bg-red-800 hover:bg-red-300">
+            <a class="{{get " project-card-base " }} bg-red-800 hover:opacity-80 transition-all">
                 <div class="text-center">
                     <img class="inline-block object-contain w-full" src="/img/casa-playa.png">
                 </div>
@@ -151,7 +151,7 @@
                 </div>
             </a>
             <!--CASA URBANA-->
-            <a class="{{get " project-card-base " }} bg-red-800 hover:bg-red-300">
+            <a class="{{get " project-card-base " }} bg-red-800 hover:opacity-80 transition-all">
                 <div class="text-center">
                     <img class="inline-block object-contain w-full" src="/img/casa-urbana.png">
                 </div>
@@ -164,9 +164,9 @@
 
 
     <!-- FOOTER -->
-    <section class="w-full h-full bg-primary">
+    <section class="w-full h-full bg-primary mt-32">
         <div class="mx-auto max-w-xs md:max-w-7xl py-10 md:p-20">
-            <div class="flex space-x-2 lg:space-x-10 items-center">
+            <div class="flex space-x-2 lg:space-x-32 items-center">
                 <img src="/img/logo-alquilafacil.png" alt="AlquilaFácil" class="object-cover h-20 md:h-32 lg:h-56">
                 <p class="font-semibold text-xs md:text-xl lg:text-2xl text-white sm:pr-0 lg:pr-52 text-justify">
                     Simplificamos el alquiler de espacios comerciales. Nuestra plataforma conecta propietarios con
