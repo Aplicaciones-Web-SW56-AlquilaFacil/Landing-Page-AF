@@ -1367,3 +1367,13 @@ html{
     line-height: 1.75rem;
   }
 }
+
+@media (min-width: 1536px) {
+  .\32xl\:mt-96 {
+    margin-top: 24rem;
+  }
+
+  .\32xl\:pt-96 {
+    padding-top: 24rem;
+  }
+}
